@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { App } from './app';
+import "./sass/index.sass"
 
 ReactDOM.render(
   <React.StrictMode>
-    <div>asdasd</div>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
