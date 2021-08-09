@@ -5,7 +5,7 @@ export const NavBar = () => {
   return (
     <nav>
       <div className="logo">
-        <img src={im} alt="" srcset="" />
+        <img src={im} alt="img" />
       </div>
       <div className="toggle-menu" onClick={() => setMenu(!menu)}>
         <i className="fas fa-bars"></i>
