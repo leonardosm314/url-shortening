@@ -3,10 +3,76 @@ nav
     display: flex
     width: calc( 100% - calc( $padingmenuLeftRigth * 2 ) )
     justify-content: space-between
-    padding: 1rem $padingmenuLeftRigth
+    align-items: center
+    padding: 2rem $padingmenuLeftRigth
+    position: relative
+    @media (max-width: $screanMovil)
+        padding: 1rem $padingmenuLeftRigth
+
     .toggle-menu
         font-weight: bold
         font-size: 1.5rem
         color: $GrayishViolet
-    .menu
         display: none
+        @media (max-width: $screanMovil)
+            display: block
+    .menu
+        width: calc(100% - 4rem)
+        display: grid
+
+        position: relative
+        list-style: none
+        margin: 0
+        padding: 0 2rem
+        grid-column-gap: 1rem
+        grid-template-columns: 1fr 1fr 1fr 49% 1fr 1fr
+        li
+            align-self: center
+            justify-self: center
+            font-size: 16px
+            cursor: pointer
+            font-weight: 700
+            color: $GrayishViolet
+            &:nth-child(6)
+                color: #fff
+                text-align: center
+                border-radius: 1.6rem
+                font-weight: 700
+                padding: 0.4rem 1rem
+                background-color: $Cyan
+
+            &:hover
+                color: $VeryDarkViolet
+
+        hr
+            visibility: hidden
+        @media (max-width: 375px)
+            display: none
+            &.active
+                font-weight: 500
+                justify-content: center
+                align-items: center
+                background-color: $DarkViolet
+                color: #fff
+                border-radius: 16px
+                width: calc( 100% - 2.4rem )
+                display: flex
+                gap: 1rem
+                padding: 2rem 0
+                flex-direction: column !important
+                position: absolute !important
+                z-index: ++1
+                top: 100%
+                hr
+                    width: 90%
+                    visibility: inherit
+                    color: $GrayishViolet
+                li
+                    padding: 0.5rem 0
+                    width: 80%
+                    text-align: center
+                    border-radius: 1.6rem
+                    &:nth-child(6)
+                        font-weight: 700
+                        padding: 0.4rem 0
+                        background-color: $Cyan

@@ -1,0 +1,65 @@
+main
+    position: relative
+    width: fit-content
+    height: fit-content
+
+    .cont-main
+        display: flex
+        column-gap: 5rem
+
+        @media (max-width: $screanMovil)
+            flex-direction: column
+            padding: 0 1.8rem
+        .detail
+            display: flex
+            width: fit-content
+            flex-direction: column
+            justify-content: center
+            h2
+                font-weight: 700
+                font-size: 80px
+                margin: 0
+                padding: 0
+                color: $VeryDarkViolet
+                @media (max-width: $screanMovil)
+                    font-size: 40px
+                    text-align: center
+            span
+                font-weight: 500
+                color: $GrayishViolet
+                width: 70%
+                margin-bottom: 2rem
+                @media (max-width: $screanMovil)
+                    text-align: center
+                    margin-bottom: 0.5rem
+                    font-size: 16px
+                    width: fit-content
+            button
+                width: fit-content
+                padding: 1rem 2rem
+                background-color: $Cyan
+                color: #fff
+                border-radius: 1.6rem
+                font-weight: 700
+                font-size: 20px
+                border: 0
+                cursor: pointer
+                &:active
+                    transform: scale(0.98)
+
+            @media (max-width: $screanMovil)
+                order: 1
+                align-items: center
+                justify-content: center
+                width: calc( 100% - 9rem )
+        img
+            width: calc( 10vw + 62rem )
+            &::after
+                position: absolute
+            @media (max-width: $screanMovil)
+                order: 0
+                width: calc( 100vw + 5.5rem)
+                position: relative
+
+        >*
+            margin: 0
