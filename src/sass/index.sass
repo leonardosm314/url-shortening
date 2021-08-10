@@ -11,6 +11,8 @@ $screanMovil: 375px
 $screanDektop: 1440px
 :root
     font-family: 'Poppins', sans-serif
+*
+    font-family: 'Poppins', sans-serif
 html, body
     margin: 0
     padding: 0
@@ -33,8 +35,21 @@ html, body
         margin-left: auto
         margin-right: auto
         background-color: #eeeeee
+    div[role="banner"]
+        width: 100%
+        min-height: 200px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 1.5rem 0
+    footer
+        width: 100%
+        background-color: $VeryDarkViolet
 
 @import ./nav/nav.sass
 @import ./main/main.sass
 @import ./shorten/shorten.sass
 @import ./Statistics/Statistics.sass
+@import ./banner/banner.sass
+@import ./footer/footer.sass
