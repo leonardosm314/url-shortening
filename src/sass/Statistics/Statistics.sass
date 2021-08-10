@@ -1,0 +1,94 @@
+.statistics
+    max-width: $screanDektop
+    position: relative
+    margin: 0rem auto
+    padding-bottom: 3rem
+    @media (max-width: $screanMovil)
+        padding-bottom: 12rem
+    .statistics-header
+        margin: 4rem auto
+        display: flex
+        width: 100%
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 1rem
+        .header-title
+            color: $VeryDarkViolet
+            font-size: 2rem
+            font-weight: bold
+            text-align: center
+
+        span.header-mss
+            color: $GrayishViolet
+            width: 36%
+            text-align: center
+            font-size: 0.9rem
+            @media (max-width: $screanMovil)
+                width: calc( 100% - 2rem )
+        >*
+            margin: 0
+    .statistics-list-articles
+        min-height: 400px
+        display: grid
+        position: relative
+        grid-template-columns: repeat(3 ,1fr)
+        column-gap: 1rem
+        @media (max-width: $screanMovil)
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 1rem
+        .item-article
+            width: calc( 100% - 4rem )
+            min-height: fit-content
+            border-radius: 10px
+            max-height: 190px
+            position: relative
+            background-color: #fff
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            padding: 0 2rem 2rem
+            box-shadow: 1px 2px 20px -4px rgba(0,0,0,0.51)
+            -webkit-box-shadow: 1px 2px 20px -4px rgba(0,0,0,0.51)
+            -moz-box-shadow: 1px 2px 20px -4px rgba(0,0,0,0.51)
+            @media (max-width: $screanMovil)
+                width: calc( 100% - 6rem )
+                padding-top: 2rem
+            h2
+                font-size: 1rem
+            span
+                font-size: 0.9rem
+                color: $GrayishViolet
+            &:nth-child(2)
+                top: 0rem
+            &:nth-child(3)
+                top: 3rem
+            &:nth-child(4)
+                top: 6rem
+            &:after
+                position: absolute
+
+            .img-back
+                position: absolute
+                background-color: $DarkViolet
+                top: calc(-80px / 2)
+                display: flex
+                border-radius: 50%
+                justify-content: center
+                align-items: center
+                width: 80px
+                height: 80px
+                img
+                    width: 50%
+        .line-item
+            position: absolute
+            width: 100%
+            height: 0.5rem
+            background-color: $Cyan
+            top: calc(50% - calc( 0.5rem / 2 ) )
+            @media (max-width: $screanMovil)
+                width: 0.5rem
+                height: 100%
+                top: 0
