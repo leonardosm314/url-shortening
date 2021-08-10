@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/url-shortening/static/css/main.99f7d77b.chunk.css",
+    "main.js": "/url-shortening/static/js/main.3a56ab12.chunk.js",
+    "main.js.map": "/url-shortening/static/js/main.3a56ab12.chunk.js.map",
+    "runtime-main.js": "/url-shortening/static/js/runtime-main.483de05b.js",
+    "runtime-main.js.map": "/url-shortening/static/js/runtime-main.483de05b.js.map",
+    "static/js/2.4f793657.chunk.js": "/url-shortening/static/js/2.4f793657.chunk.js",
+    "static/js/2.4f793657.chunk.js.map": "/url-shortening/static/js/2.4f793657.chunk.js.map",
+    "index.html": "/url-shortening/index.html",
+    "static/css/main.99f7d77b.chunk.css.map": "/url-shortening/static/css/main.99f7d77b.chunk.css.map",
+    "static/js/2.4f793657.chunk.js.LICENSE.txt": "/url-shortening/static/js/2.4f793657.chunk.js.LICENSE.txt",
+    "static/media/index.sass": "/url-shortening/static/media/bg-shorten-desktop.0d9742f4.svg",
+    "static/media/illustration-working.c9b5ef54.svg": "/url-shortening/static/media/illustration-working.c9b5ef54.svg",
+    "static/media/logo.83464303.svg": "/url-shortening/static/media/logo.83464303.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.483de05b.js",
+    "static/js/2.4f793657.chunk.js",
+    "static/css/main.99f7d77b.chunk.css",
+    "static/js/main.3a56ab12.chunk.js"
+  ]
+}
