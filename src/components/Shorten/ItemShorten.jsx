@@ -8,9 +8,6 @@ export const ItemShorten = ({ value }) => {
   const shortUrl = useRef();
   const handleClick = async () => {
     try {
-      console.log(shortUrl.current.innerHTML);
-
-      // document.execCommand("copy");
       await navigator.clipboard.writeText(shortUrl.current.innerHTML);
       alert("copied!");
     } catch (error) {
